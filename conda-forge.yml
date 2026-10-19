@@ -7,3 +7,9 @@ linter:
   skip:
     # The variants intentionally have OS-specific layouts and virtual dependencies.
   - lint_noarch_selectors
+github:
+  branch_name: main
+  tooling_branch_name: main
+conda_build:
+  error_overlinking: true
+conda_forge_output_validation: true

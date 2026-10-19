@@ -1,0 +1,9 @@
+conda_build_tool: rattler-build
+noarch_platforms:
+- linux_64
+- win_64
+
+linter:
+  skip:
+    # The variants intentionally have OS-specific layouts and virtual dependencies.
+  - lint_noarch_selectors

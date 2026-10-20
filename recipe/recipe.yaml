@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: libdivide
-  version: "5.3.0"
+  version: "5.4.0"
   build_number: 0
   os_variant: ${{ "win" if win else "unix" }}
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://github.com/ridiculousfish/libdivide/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: de3933bf2fd21300d99fcc6460a8a4a1343ae90b965d6893f044c350bac68c6e
+  sha256: 077e8ce6c783d1b4402aa6d77f643f88f37feb80e9896c30e19a62cc0a3f5576
   patches:
     # https://github.com/ridiculousfish/libdivide/pull/177
     - architecture-independent-version.patch
